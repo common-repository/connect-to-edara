@@ -1,0 +1,22 @@
+{
+    "name": "gouda/edara-erp-integration",
+    "description": "Install the required packages for http client and code standard",
+    "authors": [
+        {
+            "name": "Moustafa Gouda",
+            "email": "bafi99@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "brain/monkey": "2.*",
+        "phpunit/phpunit": "^9.2",
+        "inpsyde/php-coding-standards": "^0.13.4"
+    },
+    "scripts": {
+        "cs": "./vendor/bin/phpcs --standard=\"Inpsyde\" * --ignore=vendor",
+        "csf": "./vendor/bin/phpcbf --standard=\"Inpsyde\" * --ignore=vendor"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}

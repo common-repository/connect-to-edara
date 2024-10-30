@@ -1,0 +1,33 @@
+{
+    "name": "automattic/phpcs-neutron-standard",
+    "description": "A set of phpcs sniffs for modern php development.",
+    "type": "phpcodesniffer-standard",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Payton Swick",
+            "email": "payton@foolord.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "./vendor/bin/phpunit",
+        "lint": "./vendor/bin/phpcs NeutronStandard"
+    },
+    "autoload": {
+        "psr-4": {
+            "NeutronStandard\\": "NeutronStandard/"
+        }
+    },
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "sirbrillig/phpcs-variable-analysis": "^2.0.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
+        "phpunit/phpunit": "^6.4",
+        "limedeck/phpunit-detailed-printer": "^3.1",
+        "squizlabs/php_codesniffer": "3.3.0"
+    }
+}
